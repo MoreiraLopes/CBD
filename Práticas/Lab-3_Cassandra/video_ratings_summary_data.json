@@ -1,0 +1,14 @@
+
+ [json]
+------------------------------------
+   {"id_video": 10, "ratings": [4]}
+   {"id_video": 11, "ratings": [5]}
+    {"id_video": 1, "ratings": [1]}
+    {"id_video": 8, "ratings": [2]}
+ {"id_video": 2, "ratings": [4, 5]}
+    {"id_video": 4, "ratings": [5]}
+    {"id_video": 7, "ratings": [1]}
+ {"id_video": 6, "ratings": [4, 5]}
+    {"id_video": 9, "ratings": [5]}
+
+(9 rows)

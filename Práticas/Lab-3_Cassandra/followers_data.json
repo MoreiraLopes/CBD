@@ -1,0 +1,17 @@
+
+ [json]
+-----------------------------------------------------------------------
+  {"id_video": 5, "users": ["gamegrumps", "gametheory", "vegetta777"]}
+ {"id_video": 10, "users": ["dantdm", "stampylonghead", "vegetta777"]}
+  {"id_video": 11, "users": ["dantdm", "pewdiepie", "stampylonghead"]}
+             {"id_video": 1, "users": ["jacksepticeye", "markiplier"]}
+  {"id_video": 8, "users": ["dashiegames", "jacksepticeye", "vanoss"]}
+   {"id_video": 0, "users": ["cryaotic", "dashiegames", "gametheory"]}
+                 {"id_video": 2, "users": ["markiplier", "pewdiepie"]}
+       {"id_video": 4, "users": ["dantdm", "ninja", "stampylonghead"]}
+               {"id_video": 7, "users": ["dashiegames", "gametheory"]}
+                  {"id_video": 6, "users": ["cryaotic", "markiplier"]}
+             {"id_video": 9, "users": ["gametheory", "jacksepticeye"]}
+        {"id_video": 3, "users": ["jacksepticeye", "ninja", "vanoss"]}
+
+(12 rows)

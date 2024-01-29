@@ -1,0 +1,195 @@
+
+
+1. List all different teams
+MATCH (team:Team)
+RETURN DISTINCT team.abbreviation AS Team
+
+--- Team                  ---
+ HOU             
+ WAS             
+ VAN             
+ LAL             
+ DEN             
+ ORL             
+ CHH             
+ MIL             
+ DET             
+ POR             
+ DAL             
+ UTA             
+ SEA             
+ BOS             
+ IND             
+ SAS             
+ MIA             
+ ATL             
+ NJN             
+ LAC             
+ GSW             
+ PHI             
+ NYK             
+ TOR             
+ PHX             
+ MIN             
+ CHI             
+ SAC             
+ CLE             
+...
+
+
+2. List all the players that played for the team 'LAL'?
+MATCH (p:Player)-[:PLAYS_FOR]->(t:Team {abbreviation: 'LAL'})  
+RETURN DISTINCT p.name AS Player
+
+--- Player                  ---
+ Rick Fox             
+ Byron Scott             
+ Corie Blount             
+ Kobe Bryant             
+ Elden Campbell             
+ Eddie Jones             
+ Nick Van Exel             
+ Travis Knight             
+ Derek Fisher             
+ Jerome Kersey             
+ Robert Horry             
+ Sean Rooks             
+ Larry Krystkowiak             
+ Shaquille O'Neal             
+ George McCloud             
+...
+
+
+3. How many players were active in the season '1997-98'?
+MATCH (p:Player)-[:PLAYS_IN]->(s:Season {season_year: '1997-98'})
+RETURN count(p) AS NumberOfPlayers
+
+--- NumberOfPlayers                  ---
+ 70             
+
+
+4. Which players had an average of more than 16 points and played for the team HOU.
+MATCH (team:Team {abbreviation: 'HOU'})<-[:PLAYS_FOR]-(player:Player)-[:HAS_STAT]->(stat:Stat) 
+WITH player, AVG(stat.points) AS avgPoints 
+WHERE avgPoints > 16 
+RETURN player.name AS Player, avgPoints AS AveragePoints
+
+--- Player                   AveragePoints                  ---
+ Kevin Willis                   16.1             
+ Charles Barkley                19.2             
+ Clyde Drexler                  18.0             
+ Hakeem Olajuwon                23.2             
+
+
+5. List the 20 player with better stats(more points) in the season '1996-97'.
+MATCH (stat:Stat)<-[:HAS_STAT]-(player:Player)-[:PLAYS_IN]->(season:Season {season_year: '1997-98'}) 
+                        RETURN player.name AS PlayerName, stat.points AS Points, stat.rebounds AS Rebounds, stat.assists AS Assists 
+                        ORDER BY stat.points DESC 
+                        LIMIT 20
+
+--- PlayerName                   Points                   Rebounds                   Assists                  ---
+ Michael Jordan                   28.7                      5.8                         3.5             
+ Mitch Richmond                   23.2                      3.3                         4.0             
+ Michael Finley                   21.5                      5.3                         4.9             
+ Latrell Sprewell                 21.4                      3.6                         4.9             
+ Patrick Ewing                    20.8                      10.2                        1.1             
+ Keith Van Horn                   19.7                      6.6                         1.7             
+ Reggie Miller                    19.5                      2.9                         2.1             
+ Ray Allen                        19.5                      4.9                         4.3             
+ Kevin Garnett                    18.5                      9.6                         4.2             
+ Kerry Kittles                    17.2                      4.7                         2.3             
+ Kevin Willis                     16.1                      8.4                         1.0             
+ Rex Chapman                      15.9                      2.5                         3.0             
+ Larry Johnson                    15.5                      5.7                         2.1             
+ Kobe Bryant                      15.4                      3.1                         2.5             
+ Lamond Murray                    15.4                      6.1                         1.8             
+ Nick Anderson                    15.3                      5.1                         2.1             
+ Rasheed Wallace                  14.6                      6.2                         2.5             
+ LaPhonso Ellis                   14.3                      7.2                         2.8             
+ Nick Van Exel                    13.8                      3.0                         6.9             
+ Kendall Gill                     13.4                      4.8                         2.5             
+...
+
+
+6. List all players that are taller than 210cm and played for the team 'POR'.
+MATCH (player:Player)-[:PLAYS_FOR]->(team:Team {abbreviation: 'POR'}) 
+                        WHERE player.height > 210 
+                        RETURN player.name AS PlayerName, player.height AS Height, team.abbreviation AS Team
+
+--- PlayerName                   Height                   Team                  ---
+ Rasheed Wallace                 210.82                   POR             
+ Jermaine O'Neal                 210.82                   POR             
+ Arvydas Sabonis                 220.98                   POR             
+ Rasheed Wallace                 210.82                   POR             
+ Chris Dudley                    210.82                   POR             
+ Kelvin Cato                     210.82                   POR             
+
+
+7. List all players, and their ages, who played for the team 'GSW' in the season '1996-97'.
+MATCH (season:Season {season_year: '1996-97'})<-[:PLAYS_IN]-(player:Player)-[:PLAYS_FOR]->(team:Team {abbreviation: 'GSW'}) 
+                        RETURN player.name AS PlayerName, player.age AS Age
+
+--- PlayerName                   Age                  ---
+ Latrell Sprewell                26             
+ Mark Price                      33             
+ Ray Owes                        24             
+ Joe Smith                       21             
+ Bimbo Coles                     29             
+ Lou Roe                         24             
+ B.J. Armstrong                  29             
+ Felton Spencer                  29             
+ Melvin Booker                   24             
+ Scott Burrell                   26             
+ Andrew DeClercq                 24             
+ Chris Mullin                    33             
+ Donyell Marshall                24             
+ Todd Fuller                     22             
+...
+
+
+8. List all players that are younger than 22 years old in the season 1996-97.
+MATCH (player:Player)-[:PLAYS_IN]->(:Season {season_year: '1996-97'}) 
+                        WHERE player.age < 22  
+                        RETURN DISTINCT player.name AS PlayerName, player.age AS Age 
+                        ORDER BY Age
+
+--- PlayerName                   Age                  ---
+ Kobe Bryant                     18             
+ Jermaine O'Neal                 18             
+ Antoine Walker                  20             
+ Stephon Marbury                 20             
+ Shareef Abdur-Rahim             20             
+ Samaki Walker                   21             
+ Lorenzen Wright                 21             
+ Erick Dampier                   21             
+ Joe Smith                       21             
+ Kevin Garnett                   21             
+ Ray Allen                       21             
+...
+
+
+9. List all the seasons.
+MATCH (season:Season) 
+                        RETURN season.season_year AS SeasonYear
+
+--- SeasonYear                  ---
+ 1997-98             
+ 1996-97             
+
+
+10. List the 10 tallest players.
+MATCH (p:Player) 
+                        RETURN DISTINCT p.name AS PlayerName, p.height AS Height 
+                        ORDER BY p.height DESC LIMIT 10
+
+--- PlayerName                   Height                  ---
+ Gheorghe Muresan                231.14             
+ Shawn Bradley                   228.6             
+ Priest Lauderdale               223.52             
+ Rik Smits                       223.52             
+ Keith Closs                     220.98             
+ Arvydas Sabonis                 220.98             
+ Greg Ostertag                   218.44             
+ Luc Longley                     218.44             
+ Stojko Vrankovic                218.44             
+ Dikembe Mutombo                 218.44             

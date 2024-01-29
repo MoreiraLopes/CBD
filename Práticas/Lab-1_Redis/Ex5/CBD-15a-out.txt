@@ -1,0 +1,48 @@
+
+//O sistema atende, para cada utilizador, um máximo de 30 unidades de
+produtos a cada 60 minutos.
+
+//codig
+
+
+
+
+
+
+//output
+
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request accepted!!
+Paulo Requests: Arroz. Request not accepted...
+Paulo Requests: Arroz. Request not accepted...
+Paulo Requests: Arroz. Request not accepted...
+Paulo Requests: Arroz. Request not accepted...
+Paulo Requests: Maça. Request not accepted...

@@ -1,0 +1,50 @@
+Interação:
+
+    for(int i=0; i<10; i++){
+                sistema.registarPedido("Manel", "Couves");
+                
+            }
+            
+            for(int i=0; i<10; i++){
+                sistema.registarPedido("Iva", "Cenouras");
+                
+            }
+
+            sistema.registarPedido("Manel", "Cenouras");
+            sistema.registarPedido("Iva", "Couves");
+            sistema.registarPedido("John", "Batatas");
+            sistema.registarPedido("John", "Cenouras");
+
+
+Output:
+
+    Sistema de atendimento iniciado!
+
+    O sistema atende, para cada utilizador, um máximo de 10 produtos diferentes a cada 60 minutos.
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso!
+    Manel, o seu pedido foi registado com sucesso! Atingiu o limite de pedidos por timeslot!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso! Atingiu o limite de pedidos por timeslot!
+    Manel , atingiu o limite de pedidos por timeslot!
+    Iva , atingiu o limite de pedidos por timeslot!
+    John, o seu pedido foi registado com sucesso!
+    John, o seu pedido foi registado com sucesso!
+
+
+Nota: costumo usar o comando db.dropDatabase() antes de correr para apagar todos os registos antigos

@@ -1,0 +1,53 @@
+// NMEC: 107572
+
+# 0. Carregue o conteudo do ficheiro `/resouces/git_selection.csv`.
+//Eu estou a usar o Neo4j Desktop porque na altura tive problemas a usar o docker, por isso meti o csv na pasta import do desktop e usei este comando:
+
+load csv with headers from 'file:/git_selection.csv' as row
+create (:Programmer { num: row.num, svn_id: row.svn_id, name: row.real_name, project: row.project_name, role: row.role_on_project, org: row.organization })
+
+LOAD CSV WITH HEADERS FROM 'file:/git_selection.csv' AS row
+MERGE (m:Member {num: toInteger(row.num), svn_id: row.svn_id, real_name: row.real_name, organization: row.organization})
+MERGE (p:Projeto {name: row.project_name})
+MERGE (m)-[r:WORKS_ON {role: row.role_on_project}]->(p);
+
+# 1. Liste a informação de cada utilizador.
+match (m:Member)
+return m as User_Info
+
+# 2. Liste o nome de cada utilizador.
+match (m:Member)
+return distinct m.real_name as User_Name
+
+# 3. Liste a informação de cada projeto, no qual tenha participado pelo menos um utilizador.
+match (p:Projeto)<-[:WORKS_ON]-(:Member)
+return distinct p as Project_Name
+
+# 4. Liste os utilizadores e total de projetos em que cada um colabora.
+MATCH (m:Member)-[:WORKS_ON]->()
+WITH m.svn_id as user_id, count(*) as Counter
+RETURN user_id, Counter;
+
+# 5. Liste os utilizadores e do total de projetos em que cada colabora ordenados por ordem decrescente do total.
+MATCH (m:Member)-[:WORKS_ON]->()
+WITH m.svn_id as user_id, count(*) as Counter
+RETURN user_id, Counter
+ORDER BY Counter DESC;
+
+# 6. Liste projetos e total de membros em cada projeto.
+MATCH (p:Projeto)-[:WORKS_ON]-(m:Member)
+WITH p, count(*) as Counter
+RETURN p.name as Project, Counter
+
+# 7. Liste projetos e total de membros com a role "Committer" em cada projeto.
+MATCH (p:Projeto)-[r:WORKS_ON{role: "Committer"}]-(m:Member)
+WITH p.name as Project, count(*) as Counter
+RETURN Project, Counter
+
+# 8. Liste todos os utilizadores que participaram nos mesmo projetos do que o utilizador "atm" (id). Mostre os atributos: nome de "atm", nome utilizador 2, nome do projeto.
+MATCH (m1:Member{svn_id:"atm"})-[:WORKS_ON]->(p:Projeto)<-[:WORKS_ON]-(m2:Member)
+RETURN m1.real_name as atm_Name, m2.real_name as User2_Name, p.name as Project_Name;
+
+# 9. Liste todos os utilizadores que participaram com a role "Committer" em projetos em que o utilizador "atm" (id1) participou com a role "PMC".
+MATCH (m1:Member{svn_id:"atm"})-[:WORKS_ON{role:"PMC"}]->(p:Projeto)<-[:WORKS_ON{role:"Committer"}]-(m2:Member)
+RETURN m1.real_name as atm_Name, m2.real_name as User2_Name, p.name as Project;

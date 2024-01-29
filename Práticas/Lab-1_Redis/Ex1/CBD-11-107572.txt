@@ -1,0 +1,32 @@
+SET key "Good"
+SET key 1 key1 2 key2 3 key3 4
+MSET key 1 key1 2 key2 3 key3 4
+KEYS *e*
+MSET key a key1 b key2 c key3 d
+KEYS *e*
+KEYS *
+DEL key
+SET KEY_NAME VALUE
+LPUSH mycolor1 white black
+LRANGE mycolor1 0 -1
+LPUSH mycolor1 red blue
+LRANGE mycolor1 0 -1
+LPUSH mycolor1 white black red blue
+LRANGE mycolor1 0 -1
+LPOP mycolor1
+LRANGE mycolor1 0 -1
+ECHO "Hello World!"
+HSET myhash field1 "Hello"
+HGET myhash
+HGET myhash field1
+HSET myhash field2 "hi" field3 "World"
+HGET myhash field 2
+HGET myhash field2
+HGETALL myhash
+ZADD mycolorset 2 black
+ZADD mycolorset 1 white
+ZADD mycolorset 3 red
+ZRANGE mycolorset 0 -1
+ZRANGE mycolorset 0 -1 WITHSCORE
+
+

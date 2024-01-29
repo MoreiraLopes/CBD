@@ -1,0 +1,22 @@
+O Redis e o MongoDB são dois sistemas de gerenciamento de banco de dados NoSQL 
+
+Redis é um armazenamento de chave-valor em memória, o que significa que é ótimo para dados em que o acesso rápido seja essencial, como armazenar sessões, cache e contadores.
+MongoDB é um banco de dados orientado a documentos que suporta dados semiestruturados. É mais flexível para dados complexos.
+
+MongoDB:
+
+    Prós: Flexibilidade, escalabilidade, suporte a consultas complexas, alta durabilidade.
+
+    Contras: Pode ser mais lento que o Redis para operações simples de leitura/gravação.
+
+Redis:
+
+    Prós: Extremamente rápido para leitura/escrita de dados simples e baixa latência.
+
+    Contras: Não é ideal para armazenamento de dados complexos ou consultas complexas, menos durável.
+
+------------- // ---------------
+
+    O MongoDB é mais adequado para o problema do sistema de atendimento devido à sua flexibilidade de modelo de dados, 
+capacidade de consulta, escalabilidade, durabilidade de dados e suporte a operações de leitura e escrita eficientes. Ele oferece recursos necessários para armazenar e gerenciar pedidos detalhados, 
+aplicar limites e restrições e realizar consultas complexas.

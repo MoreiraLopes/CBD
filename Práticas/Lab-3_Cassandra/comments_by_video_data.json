@@ -1,0 +1,17 @@
+
+ [json]
+---------------------------------------------------------------------------------------------------------------------------
+       {"id_video": 5, "ts": "2023-11-28 18:56:19.609Z", "comment": "Undertale is epic indeed!", "username": "gametheory"}
+           {"id_video": 10, "ts": "2023-11-28 18:56:19.682Z", "comment": "Retro games are the best!", "username": "ninja"}
+ {"id_video": 11, "ts": "2023-11-28 18:56:19.694Z", "comment": "Terraria adventures are thrilling!", "username": "vanoss"}
+      {"id_video": 1, "ts": "2023-11-28 18:56:19.517Z", "comment": "Love your Mario skills!", "username": "jacksepticeye"}
+   {"id_video": 8, "ts": "2023-11-28 18:56:19.646Z", "comment": "Minecraft updates look great!", "username": "vegetta777"}
+              {"id_video": 0, "ts": "2023-11-28 18:56:19.491Z", "comment": "Great analysis!", "username": "jacksepticeye"}
+            {"id_video": 2, "ts": "2023-11-28 18:56:19.537Z", "comment": "Silent Hill is so scary!", "username": "dantdm"}
+     {"id_video": 4, "ts": "2023-11-28 18:56:19.585Z", "comment": "FNAF is always a challenge!", "username": "gametheory"}
+      {"id_video": 7, "ts": "2023-11-28 18:56:19.629Z", "comment": "Fortnite tips were helpful!", "username": "pewdiepie"}
+            {"id_video": 6, "ts": "2023-11-28 18:56:19.621Z", "comment": "GTA V is hilarious!", "username": "dashiegames"}
+      {"id_video": 9, "ts": "2023-11-28 18:56:19.662Z", "comment": "Building from scratch, amazing!", "username": "ninja"}
+             {"id_video": 3, "ts": "2023-11-28 18:56:19.569Z", "comment": "Outlast gave me chills!", "username": "vanoss"}
+
+(12 rows)

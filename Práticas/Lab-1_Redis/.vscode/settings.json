@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/goncalo/Transferências/jedis-5.0.0.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}

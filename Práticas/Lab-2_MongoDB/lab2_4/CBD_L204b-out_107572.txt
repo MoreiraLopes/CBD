@@ -1,0 +1,32 @@
+Interação:
+
+    System.out.println("Sistema de Atendimento B");
+            System.out.println();
+
+            sistema.registarPedido("Iva", "Peras", 5);
+            sistema.registarPedido("Iva", "Peras", 5);
+            sistema.registarPedido("Iva", "Peras", 3);
+            sistema.registarPedido("John", "Agua", 10);
+            sistema.registarPedido("John", "Agua", 10);
+            sistema.registarPedido("Iva", "Maca", 3);
+            sistema.registarPedido("John", "Almondegas", 3);
+            sistema.registarPedido("Iva", "Agua", 4);
+            sistema.registarPedido("Iva", "Maca", 3);
+
+
+
+Output:
+
+    Sistema de Atendimento B
+
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    John, o seu pedido foi registado com sucesso!
+    John, o seu pedido foi registado com sucesso!
+    Iva, o seu pedido foi registado com sucesso!
+    John , atingiu o limite de pedidos por timeslot!
+    Iva, o seu pedido foi registado com sucesso!
+    Iva , atingiu o limite de pedidos por timeslot!
+
+Nota: costumo usar o comando db.dropDatabase() antes de correr para apagar todos os registos antigos

@@ -1,0 +1,17 @@
+
+ [json]
+---------------------------------------------------------------------------------------------------------------------------
+   {"username": "vegetta777", "ts": "2023-11-28 15:24:04.521Z", "comment": "Minecraft updates look great!", "id_video": 8}
+       {"username": "gametheory", "ts": "2023-11-28 15:24:04.474Z", "comment": "Undertale is epic indeed!", "id_video": 5}
+     {"username": "gametheory", "ts": "2023-11-28 15:24:04.457Z", "comment": "FNAF is always a challenge!", "id_video": 4}
+      {"username": "jacksepticeye", "ts": "2023-11-28 15:24:04.412Z", "comment": "Love your Mario skills!", "id_video": 1}
+              {"username": "jacksepticeye", "ts": "2023-11-28 15:24:04.391Z", "comment": "Great analysis!", "id_video": 0}
+ {"username": "vanoss", "ts": "2023-11-28 15:24:04.570Z", "comment": "Terraria adventures are thrilling!", "id_video": 11}
+             {"username": "vanoss", "ts": "2023-11-28 15:24:04.440Z", "comment": "Outlast gave me chills!", "id_video": 3}
+            {"username": "dantdm", "ts": "2023-11-28 15:24:04.426Z", "comment": "Silent Hill is so scary!", "id_video": 2}
+            {"username": "dashiegames", "ts": "2023-11-28 15:24:04.489Z", "comment": "GTA V is hilarious!", "id_video": 6}
+      {"username": "pewdiepie", "ts": "2023-11-28 15:24:04.505Z", "comment": "Fortnite tips were helpful!", "id_video": 7}
+           {"username": "ninja", "ts": "2023-11-28 15:24:04.553Z", "comment": "Retro games are the best!", "id_video": 10}
+      {"username": "ninja", "ts": "2023-11-28 15:24:04.537Z", "comment": "Building from scratch, amazing!", "id_video": 9}
+
+(12 rows)

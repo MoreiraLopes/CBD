@@ -1,0 +1,17 @@
+
+ [json]
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                   {"id": 5, "ts": "2023-11-28 15:24:03.382Z", "author": "jacksepticeye", "description": "Uma jornada epica e emocionante", "name": "Jogando Undertale", "tags": ["adventure", "gaming"]}
+                   {"id": 10, "ts": "2023-11-28 15:24:03.504Z", "author": "gamegrumps", "description": "Competicao entre jogos classicos", "name": "Desafio de jogos retro", "tags": ["gaming", "retro"]}
+              {"id": 11, "ts": "2023-11-28 15:24:03.527Z", "author": "vegetta777", "description": "Exploracao e descobertas no jogo", "name": "Aventuras em Terraria", "tags": ["exploration", "gaming"]}
+    {"id": 1, "ts": "2023-11-28 15:24:03.342Z", "author": "dashiegames", "description": "Superando niveis criativos e desafiantes", "name": "Desafios de Super Mario Maker", "tags": ["Mario", "gaming"]}
+     {"id": 8, "ts": "2023-11-28 15:24:03.468Z", "author": "dantdm", "description": "Review e analise das novidades", "name": "Explorando Novas Atualizacoes do Minecraft", "tags": ["gaming", "review"]}
+    {"id": 0, "ts": "2023-11-28 15:24:03.329Z", "author": "gametheory", "description": "Analise de teorias e enredos ocultos", "name": "Teoria dos Jogos: Historia Oculta", "tags": ["gaming", "theory"]}
+     {"id": 2, "ts": "2023-11-28 15:24:03.356Z", "author": "cryaotic", "description": "Explorando o terror psicologico de Silent Hill", "name": "Gameplays de Silent Hill", "tags": ["gaming", "horror"]}
+ {"id": 4, "ts": "2023-11-28 15:24:03.375Z", "author": "markiplier", "description": "Tentando completar desafios dificeis", "name": "Desafio do Five Nights at Freddys", "tags": ["challenge", "gaming"]}
+                    {"id": 7, "ts": "2023-11-28 15:24:03.418Z", "author": "ninja", "description": "Dicas para melhorar no jogo", "name": "Tutorial avancado de Fortnite", "tags": ["gaming", "tutorial"]}
+                 {"id": 6, "ts": "2023-11-28 15:24:03.399Z", "author": "vanoss", "description": "Diversao e loucuras no mundo aberto", "name": "Melhores momentos em GTA V", "tags": ["funny", "gaming"]}
+      {"id": 9, "ts": "2023-11-28 15:24:03.488Z", "author": "stampylonghead", "description": "Criando uma cidade do zero", "name": "Construindo uma cidade no Minecraft", "tags": ["building", "gaming"]}
+                              {"id": 3, "ts": "2023-11-28 15:24:03.369Z", "author": "pewdiepie", "description": "Explorando o jogo de terror", "name": "Lets Play Outlast", "tags": ["gaming", "horror"]}
+
+(12 rows)

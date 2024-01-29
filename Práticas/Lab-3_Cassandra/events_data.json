@@ -1,0 +1,15 @@
+
+ [json]
+---------------------------------------------------------------------------------------------------------------------------------------
+ {"id_video": 1, "username": "jacksepticeye", "ts": "2023-11-28 15:24:04.232Z", "instant": "2023-11-28 15:24:04.233Z", "type": "stop"}
+    {"id_video": 1, "username": "vegetta777", "ts": "2023-11-28 15:24:04.246Z", "instant": "2023-11-28 15:24:04.246Z", "type": "stop"}
+    {"id_video": 2, "username": "pewdiepie", "ts": "2023-11-28 15:24:04.151Z", "instant": "2023-11-28 15:24:04.152Z", "type": "pause"}
+     {"id_video": 2, "username": "pewdiepie", "ts": "2023-11-28 15:24:04.169Z", "instant": "2023-11-28 15:24:04.170Z", "type": "play"}
+     {"id_video": 2, "username": "pewdiepie", "ts": "2023-11-28 15:24:04.187Z", "instant": "2023-11-28 15:24:04.187Z", "type": "stop"}
+    {"id_video": 1, "username": "markiplier", "ts": "2023-11-28 15:24:04.262Z", "instant": "2023-11-28 15:24:04.262Z", "type": "stop"}
+     {"id_video": 9, "username": "cryaotic", "ts": "2023-11-28 15:24:04.202Z", "instant": "2023-11-28 15:24:04.203Z", "type": "pause"}
+      {"id_video": 9, "username": "cryaotic", "ts": "2023-11-28 15:24:04.214Z", "instant": "2023-11-28 15:24:04.214Z", "type": "play"}
+    {"id_video": 3, "username": "vegetta777", "ts": "2023-11-28 15:24:04.292Z", "instant": "2023-11-28 15:24:04.292Z", "type": "play"}
+    {"id_video": 2, "username": "vegetta777", "ts": "2023-11-28 15:24:04.276Z", "instant": "2023-11-28 15:24:04.276Z", "type": "play"}
+
+(10 rows)

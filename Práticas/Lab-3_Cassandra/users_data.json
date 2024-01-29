@@ -1,0 +1,17 @@
+
+ [json]
+-----------------------------------------------------------------------------------------------------------------------------
+           {"username": "markiplier", "email": "emily@example.com", "name": "Emily White", "ts": "2023-11-28 15:24:03.272Z"}
+          {"username": "vegetta777", "email": "vegeta@example.com", "name": "Ines Vegeta", "ts": "2023-11-28 15:24:03.323Z"}
+         {"username": "gametheory", "email": "alice@example.com", "name": "Alice Johnson", "ts": "2023-11-28 15:24:03.073Z"}
+       {"username": "jacksepticeye", "email": "frank@example.com", "name": "Frank Miller", "ts": "2023-11-28 15:24:03.286Z"}
+         {"username": "cryaotic", "email": "charlie@example.com", "name": "Charlie Brown", "ts": "2023-11-28 15:24:03.258Z"}
+                 {"username": "vanoss", "email": "grace@example.com", "name": "Grace Lee", "ts": "2023-11-28 15:24:03.292Z"}
+      {"username": "dantdm", "email": "isabella@example.com", "name": "Isabella Martinez", "ts": "2023-11-28 15:24:03.306Z"}
+              {"username": "dashiegames", "email": "bob@example.com", "name": "Bob Smith", "ts": "2023-11-28 15:24:03.254Z"}
+ {"username": "stampylonghead", "email": "jackson@example.com", "name": "Jackson Johnson", "ts": "2023-11-28 15:24:03.311Z"}
+              {"username": "pewdiepie", "email": "dave@example.com", "name": "Dave Davis", "ts": "2023-11-28 15:24:03.263Z"}
+             {"username": "gamegrumps", "email": "john@example.com", "name": "John Peter", "ts": "2023-11-28 15:24:03.318Z"}
+               {"username": "ninja", "email": "henry@example.com", "name": "Henry Turner", "ts": "2023-11-28 15:24:03.301Z"}
+
+(12 rows)

@@ -1,0 +1,17 @@
+
+ [json]
+-----------------------------------------------------------------------------------------------------------------------------------
+      {"id": 5, "author": "gametheory", "comment": "FNAF is always a challenge!", "id_video": 4, "ts": "2023-11-28 15:24:03.885Z"}
+      {"id": 10, "author": "ninja", "comment": "Building from scratch, amazing!", "id_video": 9, "ts": "2023-11-28 15:24:03.969Z"}
+           {"id": 11, "author": "ninja", "comment": "Retro games are the best!", "id_video": 10, "ts": "2023-11-28 15:24:03.985Z"}
+               {"id": 1, "author": "jacksepticeye", "comment": "Great analysis!", "id_video": 0, "ts": "2023-11-28 15:24:03.821Z"}
+       {"id": 8, "author": "pewdiepie", "comment": "Fortnite tips were helpful!", "id_video": 7, "ts": "2023-11-28 15:24:03.936Z"}
+       {"id": 2, "author": "jacksepticeye", "comment": "Love your Mario skills!", "id_video": 1, "ts": "2023-11-28 15:24:03.836Z"}
+              {"id": 4, "author": "vanoss", "comment": "Outlast gave me chills!", "id_video": 3, "ts": "2023-11-28 15:24:03.869Z"}
+             {"id": 7, "author": "dashiegames", "comment": "GTA V is hilarious!", "id_video": 6, "ts": "2023-11-28 15:24:03.920Z"}
+        {"id": 6, "author": "gametheory", "comment": "Undertale is epic indeed!", "id_video": 5, "ts": "2023-11-28 15:24:03.902Z"}
+    {"id": 9, "author": "vegetta777", "comment": "Minecraft updates look great!", "id_video": 8, "ts": "2023-11-28 15:24:03.952Z"}
+ {"id": 12, "author": "vanoss", "comment": "Terraria adventures are thrilling!", "id_video": 11, "ts": "2023-11-28 15:24:04.002Z"}
+             {"id": 3, "author": "dantdm", "comment": "Silent Hill is so scary!", "id_video": 2, "ts": "2023-11-28 15:24:03.853Z"}
+
+(12 rows)
